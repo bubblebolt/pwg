@@ -1,0 +1,51 @@
+id,name,category,description
+1,Analytical Thinking,Cognitive Skills,The ability to systematically examine information, identify patterns and relationships, and draw logical conclusions using data-driven approaches and analytical tools
+2,Conceptual Thinking,Cognitive Skills,The capacity to understand complex ideas, see connections between abstract concepts, and simplify complicated information into understandable frameworks
+3,Problem Solving,Cognitive Skills,The skill of identifying issues, analyzing root causes, evaluating alternatives, and implementing effective solutions to overcome challenges
+4,Decision Making,Cognitive Skills,The ability to assess options, weigh trade-offs, and make timely choices based on available information and sound judgment
+5,Learning Agility,Personal Development,The capacity to quickly acquire new knowledge and skills, learn from experiences, and apply insights to novel situations
+6,Self Awareness,Personal Development,The ability to understand one's own strengths, weaknesses, emotions, and impact on others, using this insight to improve effectiveness
+7,Self Development,Personal Development,The commitment to continuously improve one's capabilities through deliberate learning activities and seeking growth opportunities
+8,Adaptability,Personal Development,The flexibility to adjust approach, behavior, and priorities in response to changing circumstances and new demands
+9,Handling Uncertainty,Personal Development,The ability to remain effective and make progress despite ambiguous information, unclear direction, or unpredictable conditions
+10,Resilience,Personal Development,The capacity to recover quickly from setbacks, maintain composure under pressure, and persist through adversity
+11,Courage,Personal Development,The willingness to face difficult situations, speak truth to power, and take calculated risks despite potential negative consequences
+12,Trustworthiness,Personal Development,The consistency between words and actions that builds confidence in one's reliability, integrity, and ethical behavior
+13,Business Ethics,Professional Standards,The understanding and application of moral principles and professional standards in business contexts to ensure ethical conduct
+14,Effective Communication,Communication,The ability to convey information clearly, listen actively, and facilitate meaningful dialogue across various audiences and channels
+15,Emotional Intelligence,Communication,The capacity to recognize, understand, and manage emotions in oneself and others to enhance relationships and performance
+16,Persuasion,Communication,The skill of influencing others through compelling arguments, negotiation, and finding mutually beneficial outcomes
+17,Interpersonal Relationship Management,Communication,The ability to build rapport, maintain positive professional relationships, and navigate social dynamics effectively
+18,Promoting Collaboration,Leadership,The capability to foster teamwork, encourage cooperation, and create environments where people work together effectively
+19,Conflict Management,Leadership,The skill of addressing disagreements constructively, finding common ground, and facilitating resolution between opposing viewpoints
+20,Developing and Empowering People,Leadership,The commitment to helping others grow professionally through coaching, mentoring, and providing developmental opportunities
+21,Building Inclusivity,Leadership,The ability to create environments where diverse perspectives are valued, respected, and leveraged for organizational benefit
+22,Team Building,Leadership,The capability to form cohesive groups, clarify roles and goals, and develop high-performing teams
+23,Building Employee Engagement,Leadership,The skill of creating conditions where employees feel motivated, valued, and emotionally invested in their work
+24,Building Networks,Leadership,The ability to establish and maintain professional relationships across boundaries that provide mutual value and support
+25,Business Acumen,Business Knowledge,The understanding of how businesses operate, including market dynamics, competitive forces, and industry trends
+26,Financial Acumen,Business Knowledge,The ability to understand, analyze, and make decisions based on financial data, budgets, and economic implications
+27,Holistic Insights,Business Knowledge,The capacity to understand global perspectives, cultural differences, and interconnected systems affecting the organization
+28,Customer Orientation,Business Knowledge,The focus on understanding and meeting customer needs, anticipating expectations, and delivering superior value
+29,Stakeholder Management,Business Knowledge,The ability to identify, engage, and balance the needs of various internal and external constituencies
+30,Knowledge Management,Organizational Skills,The systematic approach to capturing, organizing, sharing, and leveraging organizational knowledge and expertise
+31,Change Management,Organizational Skills,The capability to guide individuals and organizations through transitions while maintaining productivity and morale
+32,Organizational Governance,Organizational Skills,The understanding and implementation of policies, procedures, and oversight mechanisms that ensure ethical and compliant operations
+33,Organizational Intelligence,Organizational Skills,The ability to navigate organizational culture, politics, and informal networks to achieve objectives effectively
+34,Utilizing Technology,Technical Skills,The capacity to leverage digital tools, platforms, and emerging technologies to enhance productivity and innovation
+35,Risk Management,Organizational Skills,The systematic identification, assessment, and mitigation of potential threats to organizational objectives
+36,Crisis Management,Organizational Skills,The ability to prepare for, respond to, and lead through emergency situations that threaten organizational stability
+37,Driving Business Competitiveness,Strategic Skills,The focus on building and leveraging organizational capabilities that create sustainable competitive advantage
+38,Strategic Thinking,Strategic Skills,The ability to see the big picture, anticipate future trends, and align current actions with long-term objectives
+39,Initiative and Innovation,Strategic Skills,The proactive pursuit of new ideas, creative solutions, and breakthrough approaches to improve outcomes
+40,Inspiring and Visionary Leadership,Strategic Skills,The ability to articulate a compelling future vision and motivate others to work toward shared aspirations
+41,Maintaining Focus,Execution Skills,The discipline to concentrate on priorities, minimize distractions, and sustain attention on important tasks
+42,Attention to Detail,Execution Skills,The thoroughness in ensuring accuracy, completeness, and quality in all aspects of work output
+43,Planning and Organizing,Execution Skills,The ability to structure activities, allocate resources, and sequence tasks to achieve objectives efficiently
+44,Taking Action,Execution Skills,The bias toward initiating activity, seizing opportunities, and driving momentum rather than waiting for direction
+45,Managing Resources,Execution Skills,The capability to optimize the allocation and utilization of people, budget, time, and materials
+46,Managing Work,Execution Skills,The skill of coordinating tasks, monitoring progress, and ensuring successful completion of assignments
+47,Driving Commitment,Execution Skills,The ability to foster accountability, ownership, and follow-through on responsibilities and promises
+48,Outcome-Driven,Execution Skills,The relentless focus on achieving results and delivering value despite obstacles or competing priorities
+49,Process Improvement,Execution Skills,The systematic approach to identifying inefficiencies and implementing changes that enhance productivity and quality
+50,Quality Orientation,Execution Skills,The commitment to meeting and exceeding standards through continuous improvement and defect prevention
