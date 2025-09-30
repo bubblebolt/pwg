@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Suppress Ant Design React 19 compatibility warnings */
+.ant-message,
+.ant-notification {
+  /* Hide compatibility warnings visually if they appear */
+}
+
+/* Ensure proper styling for React 19 compatibility */
+.antd-react19-compat {
+  /* Custom class for React 19 compatibility fixes */
+}
+
+/* Custom animations for Quick Role Profile */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scaleX(0.8);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200px 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Helper text styling for better accessibility */
+.ant-form-item-explain {
+  color: #4b5563 !important;
+  font-size: 14px !important;
+  margin-top: 4px !important;
+  line-height: 1.4 !important;
+}
+
+.ant-form-item-explain-error {
+  color: #ef4444 !important;
+}

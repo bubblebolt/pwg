@@ -1,0 +1,94 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model JobRequisition {
+  id          String   @id @default(cuid())
+  title       String
+  department  String
+  location    String
+  status      String   @default("active") // active, paused, closed
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relations
+  candidates  Candidate[]
+  transfers   TransferRecord[] @relation("FromJR")
+  transfersTo TransferRecord[] @relation("ToJR")
+
+  @@map("job_requisitions")
+}
+
+model Candidate {
+  id            String   @id @default(cuid())
+  name          String
+  email         String   @unique
+  appliedDate   DateTime
+  status        String?  // Blacklisted, Multi-role, Re-applied, etc.
+  cvVersion     Int      @default(1)
+  notes         String?
+  originalJRId  String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  // Relations
+  originalJR    JobRequisition @relation(fields: [originalJRId], references: [id])
+  currentJRs    CandidateJR[]
+  tags          CandidateTag[]
+  transferHistory TransferRecord[]
+
+  @@map("candidates")
+}
+
+model CandidateJR {
+  id           String @id @default(cuid())
+  candidateId  String
+  jrId         String
+  createdAt    DateTime @default(now())
+
+  // Relations
+  candidate    Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+  jr           JobRequisition @relation(fields: [jrId], references: [id], onDelete: Cascade)
+
+  @@unique([candidateId, jrId])
+  @@map("candidate_jrs")
+}
+
+model CandidateTag {
+  id          String @id @default(cuid())
+  candidateId String
+  name        String
+  createdAt   DateTime @default(now())
+
+  // Relations
+  candidate   Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+
+  @@unique([candidateId, name])
+  @@map("candidate_tags")
+}
+
+model TransferRecord {
+  id          String   @id @default(cuid())
+  candidateId String
+  fromJRId    String?
+  toJRId      String
+  action      String   // copy, move
+  notes       String?
+  performedBy String
+  timestamp   DateTime @default(now())
+
+  // Relations
+  candidate   Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+  fromJR      JobRequisition? @relation("FromJR", fields: [fromJRId], references: [id])
+  toJR        JobRequisition @relation("ToJR", fields: [toJRId], references: [id])
+
+  @@map("transfer_records")
+}
